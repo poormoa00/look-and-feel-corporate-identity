@@ -10,13 +10,13 @@ body {
     color: #333;
 }
 
-/* Header en datumselector */
+/* header en datumselector */
 .header {
     background-color: #f8f8f8;
     padding: 10px;
 }
 
-/* Navigatie styling */
+/* navigatie styling */
 .font-nav-primary {
     display: flex;
     justify-content: center;
@@ -65,6 +65,7 @@ body {
     display: flex;
     justify-content: space-around;
     overflow-x: auto;
+    gap: 5px;
 }
 
 .dag-datum {
@@ -118,7 +119,7 @@ main {
         align-items: center;
     }
 
-    /* Zortg ervoor dat na elke <li> een lijn komt */
+    /* zortg ervoor dat na elke <li> een lijn komt */
     .tijd::after {
         color: gray;
         content: "- - - - - -";
@@ -130,7 +131,7 @@ main {
         z-index: 1;
   }
       
-    /* Zorgt ervoor dat de laatste <li>23:59</li> geen lijn krijgt */
+    /* zorgt ervoor dat de laatste <li>23:59</li> geen lijn krijgt */
     .tijd:last-child::after {
         content: '';
     }
@@ -143,17 +144,18 @@ main {
       position: relative;
     }
 
-/* Event Kaart */
 .event-card {
+    width: 90%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    padding: 15px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .radio-img {
     border-radius: 50%;
@@ -188,16 +190,15 @@ main {
 }
 
 
-
-
-
-/* Geeft de event cards de juiste hoogte passend bij het aangegeven tijdstip op het tijdlijn */
+/* geeft de event cards de juiste hoogte passend bij het aangegeven tijdstip op het tijdlijn */
 .event-1 {
      grid-row: 1 / 4 span;
+     margin-bottom: 5px;
     }
 
 .event-2 {
      grid-row: 5 / 2 span;
+     margin-bottom: 4px;
     }
 
 .event-3 { 
@@ -242,9 +243,115 @@ main {
      margin-bottom: 34px;
     }
 
+/* responsive design voor schermformaten groter dan 1100px */
+@media screen and (min-width: 1100px) {
 
-    
+    /* navigatie (font-nav-primary) naar rechterkant */
+    .font-nav-primary {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 140px; 
+        height: 100vh; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fff;
+        padding: 20px 10px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
 
-  
+    .radio-zenders {
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-   
+    .radio-zenders li a {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .radio-zenders li a img {
+        border-radius: 10px; 
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 100px 1fr; 
+        grid-template-rows: auto; 
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* tijdlijn aan de linkerkant */
+    .tijdlijn {
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 80px; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f8f8f8;
+    }
+
+    .tijd {
+        font-size: 14px;
+        color: #555;
+        padding: 9px;
+    }
+
+    .tijd::after {
+        content: "- - - - - -";
+        font-size: 12px;
+        color: gray;
+        transform: rotate(90deg);
+        margin: 4px 0;
+        margin-top: 1em;
+        margin-bottom: -0.3em;
+    }
+
+    .tijd:last-child::after {
+        content: ''; 
+    }
+
+    /* hoofdcontent aanpassen */
+    main {
+        margin-left: 100px; 
+        margin-right: 140px; 
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+
+    .artikelen {
+        grid-template-rows: repeat(24, 70px); 
+        gap: 5px; 
+    }
+
+    /* event cards aanpassen */
+    .event-card {
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 15px; 
+        font-size: 13px;
+        text-align: left; 
+    }
+
+    .font-card-title {
+        font-size: 14px;
+    }
+
+    .font-card-description {
+        font-size: 12px;
+    }
+
+    .font-card-info {
+        font-size: 11px;
+    }
+}
