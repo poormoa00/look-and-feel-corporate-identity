@@ -6,15 +6,21 @@ De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-f
 
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Mediahuis opdracht
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Wat leveren we exact op?
+
+1. Een interface die niet alleen informatie biedt over progamma's en DJ's, maar ook een gepersonaliseerde ervaring creeert voor elke luisteraar.
+
+2. We hebben de creatieve vrijheid om de interface naar eigen inzicht vorm te geven.
+
+3. De interface bevat een filterfunctie waarmee consumenten per zender (Veronica, SLAM!, 100%NL, Sublime, Sunglight) kunnen selecteren. Op basis van de gekozen zender krijgen ze een lijst te zien van de progamma's, tijden en DJ's.
+
+https://poormoa00.github.io/look-and-feel-corporate-identity/
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Bestaande huisstijl van de opdrachtgever toegapst op het project.
 
 ## Bronnen
 
