@@ -17,6 +17,9 @@ Wat leveren we exact op?
 
 3. De interface bevat een filterfunctie waarmee consumenten per zender (Veronica, SLAM!, 100%NL, Sublime, Sunglight) kunnen selecteren. Op basis van de gekozen zender krijgen ze een lijst te zien van de progamma's, tijden en DJ's.
 
+   <img width="213" alt="Scherm­afbeelding 2024-11-28 om 09 42 01" src="https://github.com/user-attachments/assets/3d404006-18fa-45d1-ae12-99632e19e789">
+
+
 https://poormoa00.github.io/look-and-feel-corporate-identity/
 
 ## Kenmerken
