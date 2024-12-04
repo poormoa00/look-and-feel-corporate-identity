@@ -89,7 +89,6 @@ body {
     border-radius: 5px;
 }
 
-.dag-datum a:hover,
 .dag-datum a.active {
     background-color: #ff007b;
     color: white;
@@ -265,9 +264,6 @@ main {
     .radio-zenders {
         flex-direction: column;
         gap: 20px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
     }
 
     .radio-zenders li a {
