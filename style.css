@@ -97,20 +97,22 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 20px;
+    grid-template-columns: 40px 1fr;
+  gap: 0px;
     padding: 20px;
+    position: absolute;
 }
 
 .tijdlijn {
    display: flex;
-   flex-direction: column;
+   flex-direction: column; 
     padding: 0;
     margin: 0;
     flex-basis: 20%;
     margin-top:  0em;
     margin-bottom: 7em;
     font-size: 14px;
+    max-width: 50px;
 }
     .tijd {
         position: relative;
@@ -276,13 +278,6 @@ main {
         border-radius: 10px; 
     }
 
-    main {
-        display: grid;
-        grid-template-columns: 100px 1fr; 
-        grid-template-rows: auto; 
-        gap: 20px;
-        padding: 20px;
-    }
 
     /* tijdlijn aan de linkerkant */
     .tijdlijn {
@@ -320,7 +315,7 @@ main {
 
     /* hoofdcontent aanpassen */
     main {
-        margin-left: 100px; 
+        margin-left: 20px; 
         margin-right: 140px; 
         grid-template-columns: 1fr; 
         padding: 20px;
